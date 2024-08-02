@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "labs-charlesluokb"
+  description: Deploy a test java app verifying current Backstage golden-path-java
+  annotations:
+    # This must match folder-name/job-name in Jenkins.
+    jenkins.io/job-full-name: cft:HMCTS_labs/labs-charlesluokb
+    github.com/project-slug: 'hmcts/labs-charlesluokb'
+  tags:
+    - java
+  links:
+    - url: https://hmcts-reform.slack.com/app_redirect?channel=platform-labs
+      title: platform-labs on Slack
+      icon: chat
+spec:
+  type: service
+  system: labs
+  lifecycle: experimental
+  owner: dts_platform_operations

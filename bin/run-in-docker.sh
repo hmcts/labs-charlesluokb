@@ -52,7 +52,6 @@ execute_script() {
 #  export S2S_SECRET=${S2S_SECRET}
 
   echo "Bringing up docker containers.."
-
   docker compose up
 }
 
